@@ -1,0 +1,5 @@
+<form action=<%= "/members/#{@name}"%> method="post">
+  <input name="_method" type="hidden" value="delete" />
+  <button type="submit" onclick= "return confirm('Do you really want to remove Member?')"><%= "Remove #{@name}"%></button>
+</form>
+<h2><a href="/members">Back</a></h2>

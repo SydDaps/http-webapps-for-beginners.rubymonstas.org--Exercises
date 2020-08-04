@@ -1,0 +1,15 @@
+<h1>ALL MEMBERS</h1>
+<h1>------------------------</h1>
+<ul>
+  <% @members.each do |member|%>
+  <li>
+  <h2><a href=<%="/members/" + member%>><%= member %></a></h2>
+  <span><a href=<%="/members/#{member}/edit"%>>EDIT</a></span>
+  <span><a  href=<%="/members/#{member}/delete"%> >DELETE</a></span>
+  <hr>
+  </li>
+  <% end %>
+</ul>
+<h1>------------------------</h1>
+<h2><a href="/members/new">New member</a></h2>
+
